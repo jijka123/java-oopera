@@ -26,10 +26,6 @@ public class Show {
         System.out.println("Этого актера нет в списке");
         int i = 0;
         for (Actor actor : listOfActors) {
-            if (i==listOfActors.size()) {
-                System.out.println("Этого актера нет в списке");
-                return;
-            }
             if (actor.equals(firstActor)) {
                 listOfActors.remove(i);
                 listOfActors.add(secondActor);
